@@ -4,6 +4,12 @@
   "workspaces": [
     "packages/**/*"
   ],
+  "scripts": {
+    "lint": "yarn lerna run lint",
+    "prettier": "yarn lerna run prettier",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
@@ -13,10 +19,10 @@
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/node-logger": "^6.5.10",
     "@storybook/react": "^6.5.10",
-    "lerna": "^5.4.3"
-  },
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "husky": "^8.0.1",
+    "lerna": "^5.4.3",
+    "lint-staged": "^13.0.3"
   }
 }

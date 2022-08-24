@@ -1,6 +1,7 @@
-const path = require('path')
+import * as path from 'path'
+import * as webpack from 'webpack'
 
-module.exports = {
+const webpackConfig: webpack.Configuration = {
   mode: 'production',
   entry: path.resolve(__dirname, 'src/index.ts'),
   resolve: {
@@ -31,3 +32,5 @@ module.exports = {
     ],
   },
 }
+
+export default webpackConfig
