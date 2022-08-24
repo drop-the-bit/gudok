@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npm run clean && webpack && tsc --emitDeclarationOnly",
     "clean": "rimraf ./dist",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prettier": "prettier --write ."
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",

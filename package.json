@@ -4,7 +4,13 @@
   "workspaces": [
     "packages/**/*"
   ],
+  "scripts": {
+    "lint": "yarn lerna run lint",
+    "prettier": "yarn lerna run prettier"
+  },
   "devDependencies": {
-    "lerna": "^5.4.3"
+    "husky": "^8.0.1",
+    "lerna": "^5.4.3",
+    "lint-staged": "^13.0.3"
   }
 }
