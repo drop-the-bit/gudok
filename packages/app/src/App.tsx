@@ -1,26 +1,11 @@
-import logo from './logo.svg'
-import './App.css'
-import Button from 'button'
+import './styles/layout.scss'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button>Test</Button>
-        </a>
-      </header>
-    </div>
-  )
-}
+const App = () => (
+  <>
+    <header></header>
+    <nav></nav>
+    <main></main>
+  </>
+)
 
 export default App

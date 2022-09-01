@@ -1,0 +1,22 @@
+$menu-width: 200px;
+$header-height: 60px;
+
+#root {
+  height: 100%;
+  display: grid;
+  grid-template-columns: $menu-width 1fr;
+  grid-template-rows: $header-height 1fr;
+  grid-template-areas: 'header header' 'nav main';
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
