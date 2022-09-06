@@ -1,15 +1,17 @@
 import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import Button from 'button'
+import Button from './Button'
 
 export default {
   title: '테스트/Button',
   component: Button,
   argTypes: {
     children: {
-      description: 'child elements',
       control: 'text',
+    },
+    disabled: {
+      description: '비활성화',
     },
   },
 } as ComponentMeta<typeof Button>
